@@ -74,3 +74,27 @@ Formula:
 j=imax​ ( d ij​ s i+s j​  )
 Where:𝑠 𝑖s i = average distance between points in cluster 𝑖i.𝑑𝑖𝑗d ij = distance between the centroids of clusters 
 𝑖i and 𝑗j.
+
+
+
+
+Explanation of Code
+Dataset Preparation:
+
+The dataset is a set of 2D data points that are converted into DoublePoint objects (used for clustering).
+K-Means Clustering:
+
+The code initializes a KMeansPlusPlusClusterer with 3 clusters (k=3) and applies it to the dataset.
+It then prints the points in each of the resulting clusters.
+Silhouette Score Calculation:
+
+The silhouette score for each data point is calculated by computing the mean distance to other points in the same cluster and the nearest cluster.
+The overall silhouette score for the clustering is the average of all individual silhouette scores.
+Conclusion
+This code demonstrates K-Means clustering with silhouette score evaluation. You can similarly implement Hierarchical Clustering or DBSCAN by using appropriate libraries or algorithms. These techniques help identify natural patterns in data and evaluate the effectiveness of clustering using metrics like silhouette score and Davies-Bouldin index.
+
+
+
+
+
+
